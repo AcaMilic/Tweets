@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Save Tweets Into Storage</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/skeleton.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+
+  <body>
+    <div class="blurred-bg-container">
+      <div id="content">
+        <div class="container">
+          <h1>Local Storage</h1>
+          <div class="row">
+            <div class="six columns">
+              <label for="tweet">Tweet:</label>
+              <form action="#" id="form">
+                <label for="tweet"></label>
+                <span data-limit="100" class="count">100</span>
+                <textarea
+                  id="tweet"
+                  class="u-full-width"
+                  placeholder="Type Here..."
+                ></textarea>
+                <button
+                  type="submit"
+                  tabindex="0"
+                  disabled
+                  class="button button-primary"
+                >
+                  <span tabindex="-1">Save Tweet</span>
+                </button>
+              </form>
+            </div>
+            <!--.six-->
+            <div class="six columns">
+              <h2>My Tweets</h2>
+              <div id="tweet-list"></div>
+            </div>
+            <!--.six-->
+          </div>
+        </div>
+      </div>
+      <!--#contenido-->
+      <!--bg-container-->
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
